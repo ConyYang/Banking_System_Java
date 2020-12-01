@@ -1,9 +1,11 @@
+import java.text.BreakIterator;
 import java.util.Scanner;
 
 
 public class BankingApplication {
     public static void main (String[] args){
-
+        BankAccount user = new BankAccount("Cony","cony123");
+        user.showMenu();
     }
 }
 
@@ -58,9 +60,54 @@ class BankAccount{
         System.out.println("E. Exit");
 
         do{
-            System.out.println("-----");
-        }while(true);
+            System.out.println("---------------------------------");
+            System.out.println("Enter sn option ");
+            System.out.println("---------------------------------");
+            option = scanner.next().charAt(0);
+            System.out.println("\n");
 
+            switch (option){
+                case 'A':
+                    System.out.println("---------------------------------");
+                    System.out.println("Balance = "+balance);
+                    System.out.println("---------------------------------");
+                    System.out.println("\n");
+                    break;
+
+                case 'B':
+                    System.out.println("---------------------------------");
+                    System.out.println("Enter an amount to deposit: ");
+                    System.out.println("---------------------------------");
+                    int deposit_amount = scanner.nextInt();
+                    deposit(deposit_amount);
+                    System.out.println("\n");
+                    break;
+
+                case 'C':
+                    System.out.println("---------------------------------");
+                    System.out.println("Enter an amount to withdraw: ");
+                    System.out.println("---------------------------------");
+                    int withdraw_amount = scanner.nextInt();
+                    withdraw(withdraw_amount);
+                    System.out.println("\n");
+                    break;
+
+                case 'D':
+                    System.out.println("---------------------------------");
+                    getPreviousTransaction();
+                    System.out.println("---------------------------------");
+                    System.out.println("\n");
+                    break;
+
+                case 'E':
+                    System.out.println("*********************************");
+                    break;
+                default:
+                    System.out.println("Invalid option");
+                    break;
+            }
+
+        }while(option!='E');
+        System.out.println("Thanks for using our service");
     }
-
 }
