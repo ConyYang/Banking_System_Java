@@ -1,4 +1,4 @@
-/*
+package MyDetails;/*
 this is  a project that outputs my name, age and hobby
 */
 import java.util.Scanner;

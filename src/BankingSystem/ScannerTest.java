@@ -1,3 +1,5 @@
+package BankingSystem;
+
 import java.util.Scanner;
 
 public class ScannerTest {
