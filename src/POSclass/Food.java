@@ -1,3 +1,5 @@
+package POSclass;
+
 public class Food {
     private String name;
     private String measurement;

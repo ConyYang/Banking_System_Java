@@ -1,3 +1,5 @@
+package POSclass;
+
 public class Dog {
     String name;
     String breed;
