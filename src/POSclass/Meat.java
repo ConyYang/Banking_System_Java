@@ -8,6 +8,6 @@ public class Meat extends Food{
 
     @Override
     public String toString() {
-        return "meat:" + super.toString();
+        return "Meat: " + super.toString();
     }
 }

@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class ScannerTest {
     public static void main (String[] args){
+        String hannah = "Did Hannah see bees? Hannah did.";
+        System.out.println(hannah.charAt(12));
+
         System.out.println(13%3);
         int countdown =10;
         int j=1;
