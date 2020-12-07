@@ -1,3 +1,4 @@
 .idea
 out/
 BankingApplication.iml
+.DS_Store

@@ -31,3 +31,11 @@ There are several ways to handle exception.
 2. User select food which is not in the menu.
 
 ![demo](demo/grocery.gif)
+
+# 4. Supermarket
+### Implementation
+This project is in package Supermarket. DairyProduct and BeverageProduct
+are inherited from GroceryProduct. Fat and Sugarlevel are 2 enums.
+The main function is in GroceryProduct.
+Here is a demo:
+![demo](demo/Supermarket.png)
