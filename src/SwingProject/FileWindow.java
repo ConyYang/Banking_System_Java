@@ -47,6 +47,30 @@ public class FileWindow extends JFrame implements ActionListener, Runnable {
         p.add("dos",dos_out_text);
         add(p, "center");
 
+        compiler_text.setBackground(Color.pink);
+        dos_out_text.setBackground(Color.cyan);
+
+        JPanel p1=new JPanel();
+        p1.setLayout(new GridLayout(3,3));
+        p1.add(button_input_txt);
+        p1.add(button_compiler_text);
+        p1.add(button_see_doswin);
+
+        p1.add(new JLabel("Enter file name .java: "));
+        p1.add(input_file_name_text);
+        p1.add(button_compiler);
+        p1.add(new JLabel("Enter class name of program"));
+        p1.add(run_file_name_text);
+        p1.add(button_run_prom);
+
+        add(p1, "North");
+        button_input_txt.addActionListener(this);
+        button_compiler.addActionListener(this);
+        button_compiler_text.addActionListener(this);
+        button_run_prom.addActionListener(this);
+        button_see_doswin.addActionListener(this);
+
+
 
     }
     @Override
