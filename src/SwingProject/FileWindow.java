@@ -45,7 +45,7 @@ public class FileWindow extends JFrame implements ActionListener, Runnable {
         p.add("input",input_text);
         p.add("compiler", compiler_text);
         p.add("dos",dos_out_text);
-        add(p, "center");
+        add(p, "Center");
 
         compiler_text.setBackground(Color.pink);
         dos_out_text.setBackground(Color.cyan);
