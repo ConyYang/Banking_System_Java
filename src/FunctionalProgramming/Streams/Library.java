@@ -6,6 +6,7 @@ public class Library {
 
     public static void main(String[] args) {
         ArrayList<Book> books = populateLibrary();
+        // Can also use parallelStream
         books.stream().filter(book -> {
             return book.getAuthor().startsWith("A");
         }).filter(book -> {

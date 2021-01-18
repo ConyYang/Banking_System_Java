@@ -39,3 +39,10 @@ are inherited from GroceryProduct. Fat and Sugarlevel are 2 enums.
 The main function is in GroceryProduct.
 Here is a demo:
 ![demo](demo/Supermarket.png)
+
+# 5. Threads
+### intro
+We use threads in 3 cases:
+- Blocking I/O
+- GUI applications
+- Independent tasks
