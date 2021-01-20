@@ -46,3 +46,16 @@ We use threads in 3 cases:
 - Blocking I/O
 - GUI applications
 - Independent tasks
+
+
+# 6.
+### Intro
+There are two core abstract classes in Java Streams API, InputStream and OutputStream. 
+As these are abstract classes, you can't instantiate them, but they each have several concrete implementations for handling different types of data.
+For example, concrete implementations of InputStream include FileInputStream for reading files and ByteArrayInputStream for reading bytes and so on. 
+Similarly, implementations of OutputStream include FileOutputStream and ByteArrayOutputStream for writing out files and byte arrays respectively and so on. 
+There are two more abstract classes called Reader and Writer. 
+These are similar to InputStream and OutputStream and they are built on the same concepts,
+but the main difference is that InputStream and OutputStream move bytes around whereas Reader and Writer move characters. 
+Characters are easier and more intuitive to work with than bytes. They also handle Unicode characters and other character encoding issues, 
+which byte streams do not. Again, these are abstract classes so it's the concrete implementations that are used depending on the type of data you are handling.
